@@ -4,10 +4,9 @@
   "description": "heroku連携",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "build": "npm-run-all build:*",
+    "build:examples": "npm-run-all build:examples:*",
+    "start": "npm run build && node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dev",

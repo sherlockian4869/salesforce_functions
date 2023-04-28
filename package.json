@@ -4,8 +4,7 @@
   "description": "heroku連携",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all build:*",
-    "build:examples": "npm-run-all build:examples:*",
+    "build": "npm-run-all",
     "start": "npm run build && node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

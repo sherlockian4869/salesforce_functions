@@ -16,6 +16,7 @@ const client = new Client({
   charset: 'utf-8',
 })
 
+// account情報を取得
 app.get('/get', async function (req, res) {
   try {
     // 接続

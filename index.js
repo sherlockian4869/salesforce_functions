@@ -3,9 +3,9 @@ const app = express()
 require('dotenv').config()
 const { Client } = require('pg')
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
-})
+// app.listen(3000, () => {
+//   console.log('Example app listening on port 3000!')
+// })
 
 // DB_URLを使用
 const client = new Client({
@@ -13,7 +13,7 @@ const client = new Client({
   ssl: {
     rejectUnauthorized: false,
   },
-  charset: 'utf8',
+  charset: 'Shift_JIS',
 })
 
 app.get('/get', async function (req, res) {
@@ -40,6 +40,6 @@ app.get('/get', async function (req, res) {
   }
 })
 
-var port = process.env.PORT || 8080
-app.listen(port)
-console.log('server starting on ' + port + ' ...')
+// var port = process.env.PORT || 8080
+// app.listen(port)
+// console.log('server starting on ' + port + ' ...')

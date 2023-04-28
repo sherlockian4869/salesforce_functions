@@ -13,7 +13,7 @@ const client = new Client({
   ssl: {
     rejectUnauthorized: false,
   },
-  charset: 'Shift_JIS',
+  charset: 'utf-8',
 })
 
 app.get('/get', async function (req, res) {
